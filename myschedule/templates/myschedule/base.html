@@ -1,0 +1,15 @@
+{% load static %}
+<head>
+    <link rel="stylesheet" href="{% static 'css/myschedule.css'%}">
+</head>
+
+<body>
+    <h1><strong>일정 관리를 해보자</strong></h1>
+    <img src={% static 'img/calendar.jpg'%} height="400px" alt="">
+    <div>
+        <a href ="{% url 'new'%}">새 글</a>
+        <a href ="{% url 'home'%}">홈으로</a>
+    </div>
+    {% block content %}
+    {% endblock %}
+</body>
